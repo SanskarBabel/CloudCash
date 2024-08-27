@@ -75,9 +75,11 @@ const AuthForm = ({ type }: { type: string }) => {
 
           if(response) router.push('/')
         }
-      } catch (error) {
+      } 
+      catch (error) {
         console.log(error);
-      } finally {
+      } 
+      finally {
         setIsLoading(false);
       }
     }
@@ -173,4 +175,4 @@ const AuthForm = ({ type }: { type: string }) => {
   )
 }
 
-export default AuthForm
+export default AuthForm;
